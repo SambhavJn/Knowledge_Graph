@@ -1,0 +1,5 @@
+Entity1,Relationship,Entity2
+Bangalore,connected_by,Train
+Bangalore,has_airport,Kempegowda Airport
+Train,connects_to,Chennai
+Bus,connects_to,Mysore

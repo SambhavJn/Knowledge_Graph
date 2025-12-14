@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Knowledge Graph Application</title>
+    <script src="https://d3js.org/d3.v7.min.js"></script>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+
+<h2>Transportation Knowledge Graph</h2>
+
+<h3>Add Relationship</h3>
+<input id="e1" placeholder="Entity 1">
+<input id="rel" placeholder="Relationship">
+<input id="e2" placeholder="Entity 2">
+<button onclick="addRelation()">Add</button>
+
+<h3>Upload CSV</h3>
+<input type="file" id="csv">
+<button onclick="uploadCSV()">Upload</button>
+
+<h3>Query</h3>
+<input id="query" placeholder="Entity name">
+<button onclick="queryGraph()">Query</button>
+<pre id="result"></pre>
+
+<h3>Graph Visualization</h3>
+<svg width="800" height="500"></svg>
+
+<script src="/static/script.js"></script>
+</body>
+</html>
